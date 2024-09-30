@@ -9,9 +9,9 @@ export default function App({ Component, pageProps }) {
       <Script
   	        src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js"
   	        strategy="lazyOnload"
-  	        onLoad={() =>
+  	        onLoad={() => {
   	         console.log("Loaded");
-  	        }
+  	        }}
   	   />
    </>
   )
