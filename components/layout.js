@@ -19,12 +19,6 @@ export default function Layout({ children }) {
 	        src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js"
 	        strategy="lazyOnload"
 	        onLoad={() =>
-		  SplunkRum.init({
-		        realm: "eu1",
-		        rumAccessToken: "UguMGKzi8yrquTbVeoGd9Q",
-		        applicationName: "verceltest",
-		        deploymentEnvironment: "test"
-		    });
 	          console.log(`script loaded correctly, window.FB has been populated`)
 	        }
 	/>
