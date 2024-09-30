@@ -15,13 +15,6 @@ export default function Layout({ children }) {
         <title>Elkjop Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-       <Script
-	        src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js"
-	        strategy="lazyOnload"
-	        onLoad={() =>
-	          console.log(`script loaded correctly, window.FB has been populated`)
-	        }
-	/>
       <main>
         <h1 className={styles.title}>
           <a href="https://www.elkjop.no">{name}!</a>
