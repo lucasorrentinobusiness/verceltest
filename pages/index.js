@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Script from 'next/script';
 import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/arraydata';
@@ -12,14 +11,6 @@ export async function getStaticProps() {
       allPostsData,
     },
   };
-}
-
-export default function Dashboard() {
-  return (
-    <>
-      <Script src="https://example.com/script.js" />
-    </>
-  )
 }
 
 export default function Home({ allPostsData }) {
