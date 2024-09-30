@@ -12,7 +12,6 @@ export default function Layout({ children }) {
 
      <div className={styles.container}>
       <Head>
-	  <>
 	<Script src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous" />
 	<Script
 	   SplunkRum.init({
@@ -23,7 +22,6 @@ export default function Layout({ children }) {
 	      deploymentEnvironment: 'test'
 	   });
 	/>
-	</>
         <title>Elkjop Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
