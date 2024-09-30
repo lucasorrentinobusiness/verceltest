@@ -13,16 +13,15 @@ export default function Layout({ children }) {
      <div className={styles.container}>
       <Head>
         <title>Elkjop Next App</title>
-	 <Script
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+       <Script
 	        src="https://connect.facebook.net/en_US/sdk.js"
 	        strategy="lazyOnload"
 	        onLoad={() =>
 	          console.log(`script loaded correctly, window.FB has been populated`)
 	        }
-	      />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+	/>
       <main>
         <h1 className={styles.title}>
           <a href="https://www.elkjop.no">{name}!</a>
