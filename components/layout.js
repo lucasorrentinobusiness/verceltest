@@ -20,7 +20,7 @@ export default function Layout({ children }) {
 		        rumAccessToken: "UguMGKzi8yrquTbVeoGd9Q",
 		        applicationName: "verceltest",
 		        deploymentEnvironment: "test"
-		    });`,
+		    })`,
 		}}
 	<Script/>
         <title>Elkjop Next App</title>
