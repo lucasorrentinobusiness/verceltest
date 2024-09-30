@@ -16,9 +16,15 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
        <Script
-	        src="https://connect.facebook.net/en_US/sdk.js"
+	        src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js"
 	        strategy="lazyOnload"
 	        onLoad={() =>
+		  SplunkRum.init({
+		        realm: "eu1",
+		        rumAccessToken: "UguMGKzi8yrquTbVeoGd9Q",
+		        applicationName: "verceltest",
+		        deploymentEnvironment: "test"
+		    });
 	          console.log(`script loaded correctly, window.FB has been populated`)
 	        }
 	/>
