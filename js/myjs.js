@@ -7,6 +7,3 @@
         deploymentEnvironment: "test"
     });
 </script>
-
-Copy to ClipboardShow less 
-The code was c
