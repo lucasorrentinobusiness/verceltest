@@ -12,8 +12,8 @@ export default function Layout({ children }) {
 
      <div className={styles.container}>
       <Head>
-	<Script type="text/javascript" src="../js/myjs.js" />
         <title>Elkjop Next App</title>
+	<script src="../js/myjs.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
