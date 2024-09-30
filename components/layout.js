@@ -12,17 +12,12 @@ export default function Layout({ children }) {
 
      <div className={styles.container}>
       <Head>
-	<Script 
-	     id="otel-rum" src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous"
-	     dangerouslySetInnerHTML={{
-		  __html: `SplunkRum.init({
-		        realm: "eu1",
-		        rumAccessToken: "UguMGKzi8yrquTbVeoGd9Q",
-		        applicationName: "verceltest",
-		        deploymentEnvironment: "test"
-		    });`,
-		}}
-	/>
+	<Script
+        src="https://example.com/script.js"
+        onLoad={() => {
+          console.log('Script has loaded')
+        }}
+      />
         <title>Elkjop Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
