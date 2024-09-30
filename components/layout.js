@@ -12,7 +12,14 @@ export default function Layout({ children }) {
 
      <div className={styles.container}>
       <Head>
-	<Script src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous" />
+	<Script id="otel-rum" src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous">
+	    {`SplunkRum.init({
+	        realm: "eu1",
+	        rumAccessToken: "UguMGKzi8yrquTbVeoGd9Q",
+	        applicationName: "verceltest",
+	        deploymentEnvironment: "test"
+	    });`}
+	<Script/>
         <title>Elkjop Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
