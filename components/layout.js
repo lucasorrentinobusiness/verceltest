@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 
      <div className={styles.container}>
       <Head>
-	<Script type="text/javascript" src="../js/myscript.js" />
+	<Script type="text/javascript" src="../js/myjs.js" />
         <title>Elkjop Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
